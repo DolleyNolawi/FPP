@@ -4,14 +4,15 @@ public class Prog4 {
 			
 			String m = Data.records;
 			String[] r = m.split(":");
-		    for(int i = 0 ; i < m.length() ; i++){	
+		    for(int i = 0 ; i < r.length ; i++){	
 		    	    String row = r[i];		    		
-		    		String[] token = row.split(",");
+/*		    		String[] token = row.split(",");
 		    		for(int j=0 ; j< row.length() ; j++){
 		    			if(j == row.length()-1){
 		    				System.out.println(token[0]);
 		    			}
-		    		}
+		    		}*/
+		    	    System.out.println(r[i].split(",")[0]);
 		    }
 		}
 }
