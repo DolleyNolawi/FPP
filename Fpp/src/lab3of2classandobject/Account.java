@@ -1,7 +1,9 @@
-package lab3classandobject;
+package lab3of2classandobject;
 
-public final class Account {
+import lab3classandobject.AccountType;
+import lab3classandobject.Employee;
 
+public class Account {
 	
 	private final static double DEFAULT_BALANCE = 0.0;
 	private double balance;

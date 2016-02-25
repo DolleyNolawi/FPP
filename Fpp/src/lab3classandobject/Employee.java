@@ -1,5 +1,5 @@
 package lab3classandobject;
-import java.util.Calendar;
+
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -9,7 +9,7 @@ public class Employee {
 	private String nickName;
 	private double salary;
 	private Date hireDay;
-	//public static LocalDate hireDay;
+
 
 	// constructor
 	Employee(String name, String aNickName, double aSalary, int aYear,int aMonth, int aDay) {
@@ -19,12 +19,7 @@ public class Employee {
 		GregorianCalendar cal = new GregorianCalendar(aYear, aMonth - 1, aDay);		
 		hireDay = cal.getTime();
 	}
-	
-/*	public static LocalDate LocalDateFromGregCalendar(GregorianCalendar cal) {
-		return LocalDate.of(cal.get(Calendar.YEAR), 1 + cal.get(Calendar.MONTH),
-		cal.get(Calendar.DATE));
-	}*/
-	
+
 	// instance methods
 	public String getName() {
 		return name;
