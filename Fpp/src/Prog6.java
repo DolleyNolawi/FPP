@@ -4,10 +4,14 @@ public class Prog6 {
 	public static void main(String[] args) {
 		String[] animals = {"Dog" , "Cat" , "Horse" , "Cat" , "Dog"};
 	    String[] result = removeDups(animals);
-	    for(String i : result){ 
-	    	System.out.println(i);
-	    }
+	    
+	    	for(int k = 0 ; k < result.length-1; k++){
+	    		System.out.println(result[k]);
+	    	}
+	    
 	}
+	
+
 	
 	static String[] removeDups(String[] a){
 		
@@ -20,12 +24,15 @@ public class Prog6 {
 				}	
 			}
 		}
+		
+	
 		int len = a.length-count;
 		String[] nonDupAnimals = new String[len];
-		for(int k = 0 ; k < a.length-1; k++){
+		for(int k = 0 ; k < a.length-2; k++){
 				if(a[k] != null) nonDupAnimals[k] = a[k];
+				//System.out.println(a[k]);
 		}		
-
+		
 		return nonDupAnimals;		
 	}
 

@@ -6,11 +6,12 @@ public class TestProg6 {
 
 	@Test
 	public void testRemoveDups() {
-		String[] testData = {"Dog" , "Cat" , "Horse" , "Cat" , "Dog"};
-		String[] result = Prog6.removeDups(testData);
-		String[] exResult = {"Dog" , "Cat" , "Horse"};
-		assertEquals(exResult, result);
-		assertTrue("Success", true);
+		String[] testData={"Dog" , "Cat" , "Horse"};
+		String[] data={"Dog" , "Cat" , "Horse" , "Cat" , "Dog"};
+		for(int i=0; i < testData.length; i++){
+						
+			assertTrue(testData[i].equals(Prog6.removeDups(data)[i]));
+		}
 		
 	}
 
