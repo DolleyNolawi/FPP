@@ -1,6 +1,5 @@
 
-public class Prog6 {
-
+public class Prog10 {
 	public static void main(String[] a){
 		String[] animals = {"Dog" , "Cat" , "Horse" , "Cat" , "Dog"};
 	    String[] result = removeDups(animals);
@@ -33,5 +32,5 @@ public class Prog6 {
 		}
 		return result;
 }
-
+	
 }
