@@ -1,5 +1,7 @@
 package lab3of2classandobject;
 
+import java.util.GregorianCalendar;
+
 public class Employee {
 
 	private Account savingsAcct;
@@ -10,25 +12,28 @@ public class Employee {
 	
 	public Employee(String name, int yearOfHire, int monthOfHire, int dayOfHire){
 		this.name = name;
-/* update, using LocalDate
+	//update, using LocalDate
 		GregorianCalendar cal = new GregorianCalendar(yearOfHire,monthOfHire-1,dayOfHire);
-		hireDate = cal.getTime();
-*/
+		
+		//hireDate = 	cal.getTime();
+
 	}
 
 	
 	public void createNewChecking(double startAmount) {
 		// implement
+		//checkingAcct = new Account();
 		
 	}
 
 	public void createNewSavings(double startAmount) {
 		// implement
-		
+		//savingsAcct = new Account();
 	}
 
 	public void createNewRetirement(double startAmount) {
 		// implement
+		//retirementAcct = new Account();
 		
 	}
 

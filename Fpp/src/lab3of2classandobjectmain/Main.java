@@ -1,7 +1,7 @@
-package lab3of2classandobject;
+package lab3of2classandobjectmain;
 
 import java.util.Scanner;
-
+import lab3of2classandobject.Employee;
 
 public class Main {
 	Employee[] emps = null;
